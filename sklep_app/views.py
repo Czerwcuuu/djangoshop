@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def index(request):
-    return HttpResponse("Moja strona w django.")
+def main(request):
+    return render(request, 'sklep_app/index.html',{})
