@@ -4,7 +4,17 @@
 </head>
 <body>
 	<div>
-	
+	{% for przedmiot in przedmioty %}
+		{{przedmiot}}
+		<div>
+		<p>nazwa: {{przedmiot.nazwa}}</p>
+		<p>cena: {{przedmiot.cena}}zł</p>
+		<p>ilość: {{przedmiot.ilosc}}</p>
+		<p>Dodane przez: {{przedmiot.dodal}}</p>
+		
+		
+		</div>
+		{% endfor %}
 	</div>
 </body>
 </html>
